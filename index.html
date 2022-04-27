@@ -1,0 +1,180 @@
+
+
+<!DOCTYPE html>
+
+
+
+
+
+
+<!--  npx compiler:  npx tailwindcss -i ./css/input.css -o ./css/output.css --watch -->
+
+
+<html lang="en" class="">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tienne:wght@900&display=swap" rel="stylesheet"> 
+
+    <!-- tailwind output file -->
+    <link rel="stylesheet" type="text/css" href="./portfolio/css/output.css" />
+
+    <!-- animate on scroll added -->
+    <link rel="stylesheet" href="./portfolio/node_modules/aos/dist/aos.css">
+    <script src="./portfolio/node_modules/aos/dist/aos.js"></script>
+
+    <!-- scripts -->
+    <script src="./portfolio/scripts/script.js" defer></script>
+   
+    
+
+    <title>Document</title>
+</head>
+<body class='overflow-x-hidden '>
+    <!-- <nav class = "">
+        <div class= " bg-neutral sticky top-0  flex-1 justify-center w-1/2 h-8 opacity-40 hover:opacity-100 duration-75 rounded-b-md">
+            <div class = "flex justify-between  gap-1 ">
+                <a href="#">Home</a>
+                <a href="#">Blog</a>
+                <a href="#">News</a>
+                
+            </div>
+        </div>
+         </nav>
+    --> 
+        
+   
+        <div class=" scroll-smooth h-screen" >
+            <!-- sectino 1 -->
+                <div id="content" name='1'  class=" scroll-smooth flex  h-screen  flex-col justify-center items-center bg-[#4C5958]  snap-center " >
+                    <img data-aos = "fade-up" data-aos-delay = "250" data-aos-duration="800" class=" m-3 h-60 rounded-full drop-shadow-2xl "  src="./portfolio/images/pplinkedin.png" alt="profile-picture" >
+                    <p data-aos = "fade-in" data-aos-delay = "1250" data-aos-duration = "900" class=" m-3 py-1 px-1 w-50 rounded-lg bg-red-500 shadow-xl h-50 border-2"><strong>Kieran Sweetman</strong></p>
+                    <p  data-aos = 'fade-up' data-aos-delay = "1950" data-aos-duration="1000" class="py-1 px-1 m-3 text-center w-80 rounded-lg border-2">
+                        Hi! <em><strong>This</strong></em> is my site where I keep all my future projects/ideas/thoughts.  
+                    </p>
+                </div>
+            
+            <!-- section 2 -->
+                <div id="content" name='2' class="  scroll-smooth h-screen  bg-[#BFBFBF]  snap-center" >
+                    <div class="flex h-screen w-screen flex-wrap">
+                        <div  class="box-border h-1/2 w-1/2 flex items-center justify-center">
+                            <div class = " px-3 py-3 box-border border-2 rounded-xl flex items-center justify-center ">
+                                <p class="text-2xl">Here are the technologies I used to put this together:</p>
+                            </div>    
+                        </div>
+                        
+                        <div class="box-border h-1/2 w-1/2 flex items-center justify-center">
+                            2
+                        </div>
+                        <div class="box-border h-1/2 w-1/2 flex items-center justify-center">
+                            3
+                        </div>
+                        <div id = 'stack' class= "box-border h-1/3 w-1/3">
+                            
+                            <div id="frontend" class = "flex flex-shring flex-row flex-wrap-reverse w-50 justify-center  py-10 rounded-full ">
+                                <img data-aos ='flip-right' data-aos-delay='' data-aos-duration = "1250" class = " h-24 w-24" src="./portfolio/images/logos/HTML5.svg" alt="html 5 logo " >
+                                <img data-aos ='flip-right' data-aos-delay='250' data-aos-duration = "1250" class = "  h-24 w-24 "src="./portfolio/images/logos/css3.svg" alt="css logo" >
+                                <img data-aos ='flip-right' data-aos-delay='500' data-aos-duration = "1250"  class= " h-24 w-24" src="./portfolio/images/logos/javascript.svg" alt="js logo" >
+                                <img data-aos ='flip-right' data-aos-delay='750' data-aos-duration = "1250" class =" h-24 w-56" src="./portfolio/images/logos/tailwindcss-logotype.svg" alt="tailwindcss logo" >
+                            </div>
+                            <!-- <div id="backend" class="flex flex-row mt-10 justify-center  py-10 rounded-full ">
+                                <img data-aos ='flip-left' data-aos-delay = "1000" data-aos-anchor='#frontend' data-aos-duration = "1250" class ="h-24 w-25" src="./portfolio/images/logos/python.svg" alt="python logo" >
+                                <img data-aos ='flip-left' data-aos-delay = "1250" data-aos-anchor='#frontend' data-aos-duration = "1250" class ="h-24 w-25" src="./portfolio/images/logos/django.svg" alt="django logo" >
+                            </div> -->
+
+                        </div>
+                    </div>    
+                </div>
+             
+            <!-- section 3 -->
+                <div id="content" name='3' class="  scroll-smooth flex f h-screen  flex-col justify-center items-center bg-[#4C5958] gap-10 snap-center">
+                    <div class="flex flex-row w-screen justify-evenly ">
+                        <div class = 'flex flex-col h-52 w-52' id="timeline_info" data-aos = 'fade-down' data-aos-delay="300" data-aos-duration="1000" data-aos-easing="-in-out">
+                            
+                            <p>from california but live in france currently</p>
+                        </div>
+                        <div class = 'flex h-52 w-52' id="timeline_info" data-aos = 'fade-down' data-aos-delay="900" data-aos-duration="1500" data-aos-easing="ease-in-out">
+                            Earned a Bachelors in Social Science, with a minor in economics in 2021 from Paul Valery
+                        </div>
+                        <div class = 'flex h-52 w-52' id="timeline_info" data-aos = 'fade-down' data-aos-delay="1500" data-aos-duration="1000" data-aos-easing="-in-out">
+                            <p>Highlight why i love bringing people together with my few events</p>
+                        </div>
+                        <div class = 'flex h-52 w-52' id="timeline_info" data-aos = 'fade-down' data-aos-delay="2100" data-aos-duration="1000" data-aos-easing="-in-out">
+                            <p>
+                                My deep passion for technology pushes me to look forward, searching and exploring new ideas and new opportunites (put an arrow here for timeline reference)
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class = "transition ease flex w-screen h-3  mx-0 bg-[#8AA6A3] border-2 ">
+
+                    </div>
+
+                    <div class="flex flex-row w-screen justify-evenly">
+                        <div class = 'flex h-52 w-52' id="timeline_info" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000" data-aos-easing="">
+                            <p class = "flex-wrap ">
+                            A naturally competitive person, from sailing to video games (insert some dropdown or list or something for games I used to play competitivly)
+                            </p>
+                        </div>
+                        <div class = 'flex h-52 w-52' id="timeline_info" data-aos="fade-up" data-aos-delay="1200" data-aos-duration="1000" data-aos-easing="">
+                            <p>Started learning programming/web developpement seriously at the end of '21 Summer season.</p>
+                        </div>
+                        <div class = 'flex h-52 w-52' id="timeline_info" data-aos="fade-up" data-aos-delay="1800" data-aos-duration="1000" data-aos-easing="">
+                            <p>
+                                Tournement Organizer and Admin for LeFrenchMelee (on break)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            
+            <!-- section 4 -->
+                <div id="content" name='4' class="  scroll-smooth h-screen  flex justify-center items-center bg-[#BFBFBF] snap-center">
+                        <p class ="text-zinc-400"> Contact Info: </p>
+                        <div id="card_cont" class = "bg-white h-2/5 w-1/5 flex flex-col flex-wrap">
+                            <img class="w-max" src="./portfolio/images/range.jpg" alt="swiss-mountain-range">
+                            <div id="pers_info" class=" flex h-1/2 flex-row flex-grow-0 items-center justify-between">
+                                <img class = "rounded-b-full  h-1/2 w-auto px-3" src="./portfolio/images/card-img-pfp.jpg" alt="profile-picture">
+                                <div class="px-3 mr-16  w-fit">
+                                    <p class="my-2">name</p>
+                                    <p>Contact Me</p>
+                                </div>
+                                
+                                
+                                
+                                <input id="expand" class = "flex px-3 mb-11 items-center justify-center   " type="image" src="./portfolio/images/svg/chevron-down.svg" >
+                                <div class="overflow-hidden" >
+                                    <p>more info</p>
+                                </div>
+                            </div>
+                            
+
+                        </div>
+                        <div class="flex justify-evenly items-center h-1/4 w-1/2">
+                            <div>
+                                <a href="https://github.com/kieransweetman" class="hover:underline underline-offset-8 text-zinc-400">Github</a>
+                            </div>
+                            <div>
+                                <a href="https://www.linkedin.com/in/kieran-sweetman/" class="hover:underline underline-offset-8 text-zinc-400">Linkedin</a>
+                            </div>
+                            <div>
+                                <a href="mailto:kieranandresweetman@gmail.com?" class="hover:underline underline-offset-8 text-zinc-400">Email</a>
+                            </div>
+                            
+                        </div> 
+                </div>
+            
+        </div>
+        <script>
+            AOS.init({
+                startEvent: 'DOMContentLoaded',
+                once: true,
+                mirror: false,
+                anchorPlacement: 'top-bottom',
+            });
+        </script>
+</body>
+</html>
