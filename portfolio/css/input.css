@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#pfp {
+    border-radius: 50px;
+}
+
+#more_cont {
+    opacity: 0%;
+    transition-property: opactiy;
+    transition-delay: 1s;
+}
