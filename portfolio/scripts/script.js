@@ -119,11 +119,10 @@ async function getQuote() {
 function quoteInfo(array){
     const quote = document.getElementById('quote');
     const author = document.getElementById('author');
-    const id = document.getElementById('id')
+
 
     quote.textContent = array.body ;
     author.textContent = "- " +array.author;
-    id.textContent = array.id;
 }
 
 getQuote();
