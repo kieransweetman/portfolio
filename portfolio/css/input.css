@@ -11,3 +11,16 @@
     transition-property: opactiy;
     transition-delay: 1s;
 }
+#timeline_info {
+    transition-delay: 0s;
+}
+#back {
+    visibility: none;
+}
+#backCardText {
+    transform: rotateY(180deg);
+}
+
+/* #timeline_info:focus {
+    transform: rotateY(180deg);
+} */

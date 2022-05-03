@@ -52,6 +52,9 @@ function expandUp(){
 
 const tabButtons = document.querySelectorAll('#tab')
 const content = document.querySelectorAll('#content');
+
+// get button source, n+1 to scroll to next content section 
+// last button returns to the top
 tabButtons.forEach(input => {
     input.addEventListener('click', () => {
         let name = name_extractor(input);
@@ -62,10 +65,7 @@ tabButtons.forEach(input => {
         }
 
         name += 1;
-        console.log(content);
-
-
-
+ 
         content.forEach(element => {
             let result = name_extractor(element);
             if (result === name) {
@@ -81,7 +81,51 @@ function name_extractor(element) {
     return Number(element.getAttribute('name'));
 }
 
+// card flipper -- to work on
+
+const infoCards = document.querySelectorAll('#infoCards')
+
+infoCards.forEach(card => {
+    card.addEventListener('click', () => {
+        let side = getSide(card);
+        
 
 
+
+    })
+})
+
+
+function getSide(card){
+    const side = card.firstElementChild.getAttribute('id');
+    return side;
+}
+
+function cardFlipper(side){
+    if (side === 'front') {
+        
+    }
+}
+
+// quote
+
+async function getQuote() {
+    const api_url = "https://stoicquotesapi.com/v1/api/quotes/random";
+    fetch(api_url)
+    .then(response => response.json())
+    .then (result => quoteInfo(result));
+}
+
+function quoteInfo(array){
+    const quote = document.getElementById('quote');
+    const author = document.getElementById('author');
+    const id = document.getElementById('id')
+
+    quote.textContent = array.body ;
+    author.textContent = "- " +array.author;
+    id.textContent = array.id;
+}
+
+getQuote();
 
 
