@@ -71,7 +71,7 @@ hide scroll buttons when no longer in view and slowly fade in once they are -->
                 <div id="content" name='2' class="scroll-smooth h-screen  bg-[#BFBFBF]  snap-center" >
                     <div class="flex h-screen w-screen flex-wrap relative" id="">
                         <div class=" relative  h-1/2 w-1/2 flex items-center justify-center">
-                            <div class="static flex flex-col px-5 h-1/2 w-1/2 border-2 gap-10 justify-center items-center text-center rounded-xl ">
+                            <div class="static flex flex-col px-5 h-1/2 w-1/2 gap-10 justify-center items-center text-center rounded-xl ">
                                 <img class = " h-28 absolute top-20 left-44 overflow-visible" src="./portfolio/images/svg/dq.svg" alt="doubleQuotes" srcset="">
                                 <em><p id="quote" class=""></p></em>
                                 
@@ -101,50 +101,68 @@ hide scroll buttons when no longer in view and slowly fade in once they are -->
                 </div>
              
             <!-- section 3 -->
-                <div id="content" name='3' class="relative scroll-smooth flex f h-screen  flex-col justify-center items-center bg-[#4C5958] gap-10 snap-center" >
+                <div id="content" name='3' class="relative scroll-smooth flex f h-screen  flex-col justify-center items-center bg-[#4C5958] gap-10 snap-center " >
                 
                     <div class=" h-fit relative flex flex-row w-screen justify-center gap-48" >
                         
-                        <div class = ' px-3 rounded-2xl flex flex-col h-96 w-80  border-2 border-[#BFBFBF] bg-white  items-center justify-start' id="infoCards" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000" data-aos-easing="">
-                            <div class="flex flex-col items-center justify-center" id="front">
-                                <p class="mt-1 mb-2">more about me</p>
-                                <img  class = "h-fit rounded-lg" src="./portfolio/images/range.jpg" alt="">
-                                <p class = "text-center mt-2">
-                                A naturally competitive person, from sailing to video games, I like to push the boundaries of my own capabilites.
-                                </p>
-                            </div>
-                            <div class = "hidden" id="back" >
-                                <p class="backCardText">
-                                    this is a test
-                                </p>
-                            </div>
-                        </div>
-                        <div class = ' px-3 rounded-2xl flex flex-col  h-96 w-80   border-2 border-[#BFBFBF] bg-white  items-center justify-start' id="infoCards" data-aos="fade-up" data-aos-delay="1200" data-aos-duration="1000" data-aos-easing="">
-                            <div class="flex flex-col items-center justify-center" id="front">
-                                <p class="mt-1 mb-2">programming in 2022</p>
-                                <img  class = "h-fit rounded-lg" src="./portfolio/images/range.jpg" alt="">
-                                <p class= "text-center mt-2">Started learning programming/web developpement seriously at the end of '21 Summer season.</p>
-                            </div>
-                            <div class = "hidden" id="back">
-                                <p class="backCardText">
-                                    this is a test
-                                </p>
-                            </div>
-                        </div>
-                        <div class = 'px-3 rounded-2xl flex flex-col h-96 w-80  border-2 border-[#BFBFBF] bg-white  items-center justify-start' id="infoCards" data-aos="fade-up" data-aos-delay="1800" data-aos-duration="1000" data-aos-easing="">
-                            <div class="flex flex-col items-center justify-center" id="front">
-                                <p class="mt-1 mb-2">where i'm heading</p>
-                                <img  class = "h-fit rounded-lg" src="./portfolio/images/range.jpg" alt="">
-                                <p class= "text-center mt-2">
-                                    My journy doesn't stop here, how do I envision my future?
-                                </p>
-                            </div>
-                            <div class = "hidden" id="back">
-                                <p class="backCardText">
-                                    this is a test
-                                </p>
+                        <div class = ' rounded-2xl flex flex-col h-96 w-80    items-center justify-start ' id="infoCards" name="1" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000" data-aos-easing="">
+                            <div id="inner">
+                                <div class="flex flex-col items-center justify-center" id="front" >
+                                    <img  class = "h-fit rounded-lg" src="./portfolio/images/svg/school.svg" alt="">
+                                    <p class = "text-center mt-2">
+                                    A diverse education thanks to my American roots and my residency in southern France.
+                                    </p>
+                                </div>
+                                <div id="back" class="flex h-full w-full justify-center">
+                                    <div class= 'flex flex-col justify-center items-center gap-7'>
+                                        <button class="h-1/4 w-3/4 border-2 rounded-lg ">
+                                            highschool diploma
+                                        </button>
+                                        <button class="h-1/4 w-3/4 border-2 rounded-lg ">
+                                            Social Science (minor in Economics) Bachelors from Paul valery
+                                        </button>
+                                        <button class="h-1/4 w-3/4 border-2 rounded-lg ">
+                                            Preparing for a state-recognized diploma in web developpement at Diginamic
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
                             
+                            
+                        </div>
+
+
+                        <div class = ' static rounded-2xl flex flex-col  h-96 w-80  items-center justify-start' id="infoCards" name="2" data-aos="fade-up" data-aos-delay="1200" data-aos-duration="1000" data-aos-easing="">
+                            <div id="inner">
+                                <div class="flex flex-col items-center justify-center" id="front"> 
+                                    <img  class = "h-fit rounded-lg" src="./portfolio/images/svg/briefcase.svg" alt="">
+                                    <p class= "text-center mt-2">A responsable, communicative team player who likes to enable others while also maximazing my own potential</p>
+                                </div>
+                                <div id="back" class="flex h-full w-full justify-center">
+                                    <div class = "flex flex-col h-full w-full justify-center items-center gap-10" >
+                                        <button class="border-2 rounded-lg h-1/4 w-3/4">Administrative aide/ Gate-keeper</button>
+                                        <button class="border-2 rounded-lg h-1/4 w-3/4">Event/Tournement Organizer</button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class = 'rounded-2xl flex flex-col h-96 w-80  items-center justify-start' id="infoCards" name="3" data-aos="fade-up" data-aos-delay="1800" data-aos-duration="1000" data-aos-easing="">
+                            <div id="inner">
+                                <div class="flex flex-col items-center justify-center" id="front" >
+                                    <img  class = "h-fit w-fit rounded-lg" src="./portfolio/images/svg/notebook.svg" alt="">
+                                    <p class= "text-center mt-2">
+                                        My journy has brought me here, so what have I learned? And more importantly, how do I envision my future?
+                                    </p>
+                                </div>
+                                <div  id="back" class=" flex h-full w-full justify-center">
+                                    <div class = "flex flex-col justify-center items-center gap-10 w-full">
+                                        <button class="border-2 rounded-lg  h-1/4 w-3/4">Skills</button> 
+                                        <button class="border-2 rounded-lg h-1/4 w-3/4">Programming</button>
+                                    </div>
+                                    
+                                </div>
+                            </div>
                         </div>
                     </div>
                     

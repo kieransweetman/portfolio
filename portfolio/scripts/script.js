@@ -84,30 +84,30 @@ function name_extractor(element) {
 // card flipper -- to work on
 
 const infoCards = document.querySelectorAll('#infoCards')
+const frontCards = document.querySelectorAll('#front')
+const backCards = document.querySelectorAll('#back');
 
-infoCards.forEach(card => {
-    card.addEventListener('click', () => {
-        let side = getSide(card);
+
+
+// infoCards.forEach(card => {
+//     card.addEventListener('mouseover', function(event){
+//         if (event.currentTarget !== event.target) {
+//             return
+//         }
+//         let element = event.currentTarget;
+//         element.style.transform = "rotateY(180deg)";
+//         element.style.transition = 'transform 0s 0.8s';
+//     }, {
+//         capture: true,
         
+//     }, false)
+// })
 
+// function random(elem){
+//     console.log(elem)
+// }
 
-
-    })
-})
-
-
-function getSide(card){
-    const side = card.firstElementChild.getAttribute('id');
-    return side;
-}
-
-function cardFlipper(side){
-    if (side === 'front') {
-        
-    }
-}
-
-// quote
+// quote generator
 
 async function getQuote() {
     const api_url = "https://stoicquotesapi.com/v1/api/quotes/random";
