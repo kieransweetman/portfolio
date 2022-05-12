@@ -99,91 +99,21 @@ hide scroll buttons when no longer in view and slowly fade in once they are -->
             <!-- section 3 -->
                 <div id="content" name='3' class="relative scroll-smooth flex f h-screen  flex-col justify-center items-center bg-grey gap-10 snap-center bg-gradient-to-b from-[#6E6A8B] to-[#B37F93]" >
                     <div id="About" class="absolute top-0"></div>
-                    <div class=" h-fit relative flex flex-row w-screen justify-center gap-48">
+                    <div class="flex flex-col w-1/3 h-1/2 gap-5">
+                        <div class="h-16 w-full border-2 rounded-lg bg-transparent flex justify-center">
+                            <button class="w-1/3 h-full hover:bg-[#BFC9B8] rounded-tl-lg rounded-bl-lg">Education</button>
+                            <button class="w-1/3 h-full hover:bg-[#BFC9B8]">Experience</button>
+                            <button class="w-1/3 h-full hover:bg-[#BFC9B8] rounded-br-lg rounded-tr-lg">Skills</button>
+                        </div>
+                        <div class="h-1/2 w-full border-2 rounded-lg bg-transparent flex flex-col justify-center gap-5 px-5">
+                            <div class="w-full h-1/4 border-2 rounded-full animate-pulse bg-slate-500"></div>
+                            <div class="w-full h-1/4 border-2 rounded-full animate-pulse bg-slate-500"></div>
+                            <div class="w-full h-1/4 border-2 rounded-full animate-pulse bg-slate-500"></div>
+                        </div>
                         
-                        <div class = ' rounded-2xl flex flex-col h-96 w-80    items-center justify-start ' id="infoCards" name="1" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000" data-aos-easing="">
-                            <div id="inner" class="shadow-lg ">
-                                <div class="flex flex-col items-center justify-center" id="front" >
-                                    <img  class = "h-fit rounded-lg" src="./portfolio/images/svg/school.svg" alt="">
-                                    <p class = "text-center mt-2">
-                                    A diverse education thanks to my American roots and my residency in southern France.
-                                    </p>
-                                </div>
-                                <div id="back" class="flex h-full w-full justify-center shadow-lg">
-                                    <div class= 'flex flex-col justify-center items-center gap-7'>
-                                        <button class="h-1/4 w-3/4  rounded-lg ">
-                                            highschool diploma
-                                        </button>
-                                        <button class="h-1/4 w-3/4  rounded-lg ">
-                                            Social Science (minor in Economics) Bachelors from Paul valery
-                                        </button>
-                                        <button class="h-1/4 w-3/4  rounded-lg ">
-                                            Preparing for a state-recognized diploma in web developpement at Diginamic
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            
-                        </div>
-
-
-                        <div class = ' static rounded-2xl flex flex-col  h-96 w-80  items-center justify-start' id="infoCards" name="2" data-aos="fade-up" data-aos-delay="1200" data-aos-duration="1000" data-aos-easing="">
-                            <div id="inner" class="shadow-lg ">
-                                <div class="flex flex-col items-center justify-center" id="front"> 
-                                    <img  class = "h-fit rounded-lg" src="./portfolio/images/svg/briefcase.svg" alt="">
-                                    <p class= "text-center mt-2">A responsable, communicative team player who likes to enable others while also maximazing my own potential</p>
-                                </div>
-                                <div id="back" class="flex h-full w-full justify-center shadow-lg">
-                                    <div class = "flex flex-col h-full w-full justify-center items-center gap-10" >
-                                        <button class=" rounded-lg h-1/4 w-3/4">Administrative aide/ Gate-keeper</button>
-                                        <button class=" rounded-lg h-1/4 w-3/4">Event/Tournement Organizer</button>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <div class = 'rounded-2xl flex flex-col h-96 w-80  items-center justify-start' id="infoCards" name="3" data-aos="fade-up" data-aos-delay="1800" data-aos-duration="1000" data-aos-easing="">
-                            <div id="inner" class="shadow-lg">
-                                <div class="flex flex-col items-center justify-center" id="front" >
-                                    <img  class = "h-fit w-fit rounded-lg" src="./portfolio/images/svg/notebook.svg" alt="">
-                                    <p class= "text-center mt-2">
-                                        My journy has brought me here, so what have I learned? And more importantly, how do I envision my future?
-                                    </p>
-                                </div>
-                                <div  id="back" class=" flex h-full w-full justify-center shadow-lg">
-                                    <div class = "flex flex-col justify-center items-center gap-10 w-full py-5 text-left ">
-                                        <details class="open text-left">
-                                            <summary>
-                                                Skills    
-                                            </summary>
-                                            <div>
-                                                <ul>
-                                                    <li>Descriptive Statstics</li>
-                                                    <li>something</li>
-                                                    <li>something else</li>
-                                                </ul>
-                                            </div>
-                                        
-                                        </details>
-                                        <!-- <button class="border-2 rounded-lg h-1/4 w-3/4">Programming</button> -->
-                                        <details class="open">
-                                            <summary>Programming</summary>
-                                            <div>
-                                                <ul>
-                                                    <li>HTML</li>
-                                                    <li>CSS</li>
-                                                    <li>JS</li>
-                                                    <li>Python</li>
-                                                </ul>
-                                            </div>
-                                        </details> 
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                        </div>
+                        
                     </div>
+                       
 
                     <input class="absolute bottom-0 mb-5 border-2 rounded-full animate-bounce" type="image" src="./portfolio/images/svg/arrow-down.svg" id="tab" name = '3'>
                     
