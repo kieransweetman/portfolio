@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+
+html{
+    scroll-behavior: smooth;
+}
 #pfp {
     border-radius: 50px;
 }
@@ -49,7 +53,7 @@
 }
 
 button:hover {
-    background-color: #4C5958;
+    text-decoration-line: underline;
 }
 
 button:active {

@@ -88,25 +88,6 @@ const frontCards = document.querySelectorAll('#front')
 const backCards = document.querySelectorAll('#back');
 
 
-
-// infoCards.forEach(card => {
-//     card.addEventListener('mouseover', function(event){
-//         if (event.currentTarget !== event.target) {
-//             return
-//         }
-//         let element = event.currentTarget;
-//         element.style.transform = "rotateY(180deg)";
-//         element.style.transition = 'transform 0s 0.8s';
-//     }, {
-//         capture: true,
-        
-//     }, false)
-// })
-
-// function random(elem){
-//     console.log(elem)
-// }
-
 // quote generator
 
 async function getQuote() {
