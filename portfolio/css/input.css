@@ -52,13 +52,16 @@ html{
     transform: rotateY(180deg);
 }
 
-button:hover {
+/* button:hover {
     text-decoration-line: underline;
+} */
+#resumeTabContent {
+    display: none;
 }
-
 button:active {
     background-color: beige;
 }
+
 
 
 

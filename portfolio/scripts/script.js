@@ -25,7 +25,7 @@ expand.addEventListener('click', () => {
  function expandDown() {
     
     card_cont.style.transition = "height .2s ease-in-out";
-    card_cont.style.height ="80%";
+    card_cont.style.height ="30rem";
     
     more_cont.style.transition = "opacity .3s ease-in-out .2s"
     more_cont.style.opacity = "1";
@@ -38,7 +38,7 @@ expand.addEventListener('click', () => {
 function expandUp(){
 
     card_cont.style.transition = "height .2s ease-in-out";
-    card_cont.style.height ="60%";
+    card_cont.style.height ="50%";
 
     more_cont.style.transition = "opacity .1s ease-in-out"
     more_cont.style.opacity = "0";
@@ -83,10 +83,47 @@ function name_extractor(element) {
 
 // card flipper -- to work on
 
-const infoCards = document.querySelectorAll('#infoCards')
-const frontCards = document.querySelectorAll('#front')
-const backCards = document.querySelectorAll('#back');
+const pers_tabs = document.getElementById('pers_tabs');
+const slider = document.getElementById('slider');
+const resume_info = document.getElementById('tabContent')
 
+
+pers_tabs.addEventListener('click', (event)=> {
+    if (event.target.getAttribute('id') === 'tab1') {
+        resume_info.textContent= "";
+        eduInfo();
+        
+    } else if (event.target.getAttribute('id') === 'tab2'){
+        resume_info.textContent= "";
+       expInfo();
+        
+    } else {
+        resume_info.textContent= "";
+        Skills();
+    }
+})
+
+function eduInfo(){
+    const img = document.createElement('img');
+    const button1 = document.createElement('button');
+    img.setAttribute('src', "./portfolio/images/svg/school.svg")
+    resume_info.appendChild(img);
+    button1.textContent = "Social Science Major";
+    resume_info.appendChild(button1);
+
+}
+
+function expInfo(){
+    const img = document.createElement('img')
+    img.setAttribute('src', "./portfolio/images/svg/briefcase.svg");
+    resume_info.appendChild(img);
+}
+
+function Skills(){
+    const img = document.createElement('img');
+    img.setAttribute('src', "./portfolio/images/svg/notebook.svg");
+    resume_info.appendChild(img)
+}
 
 // quote generator
 
