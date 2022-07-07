@@ -1,227 +1,350 @@
-
-
 <!DOCTYPE html>
 <!-- 
 to do:
 hide scroll buttons when no longer in view and slowly fade in once they are -->
 
-
-
-
 <!--  npx compiler:  npx tailwindcss -i ./css/input.css -o ./css/output.css --watch -->
 
-
 <html lang="en" class="">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Tienne:wght@900&display=swap" rel="stylesheet"> 
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tienne:wght@900&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- tailwind output file -->
     <link rel="stylesheet" type="text/css" href="./portfolio/css/output.css" />
 
     <!-- animate on scroll added -->
-    <link rel="stylesheet" href="./portfolio/node_modules/aos/dist/aos.css">
+    <link rel="stylesheet" href="./portfolio/node_modules/aos/dist/aos.css" />
     <script src="./portfolio/node_modules/aos/dist/aos.js"></script>
 
     <!-- scripts -->
-    <script  src="./portfolio/scripts/script.js" defer></script>
-   
-    
+    <script src="./portfolio/scripts/script.js" defer></script>
 
     <title>Document</title>
-</head>
-<body class='overflow-x-hidden'>
-        <nav class="absolute w-full">
-            <div class="flex justify-end mx-2 mr-40 mt-3">
-                <ul class="flex gap-10">
-                    <a href="#technologies">technologies</a>
-                    <a href="#About">About</a>
-                    <a href="#card_cont">Contact</a>
-                </ul>
-            </div>
-        </nav>
-    
-        
-   
-        <div class=" scroll-smooth h-screen" >
-            <!-- sectino 1 -->
-                <div id="content" name='1'  class=" scroll-smooth flex  h-screen  flex-col justify-center items-center bg-gradient-to-b from-[#343731] to-[#5F5D6C]" >
+  </head>
+  <body class="overflow-x-hidden">
+    <nav class="w-full h-12 fixed bg-transparent 0">
+      <div class="flex items-center h-full w-full md:justify-center">
+        <ul
+          class="h-full flex md:w-screen md:justify-center lg:justify-end lg:gap-3"
+        >
+          <a
+            class="h-3/4 text-white flex items-center px-4 py-2 border-2 rounded-lg hover:bg-slate-100 hover:text-black"
+            id="pSections"
+            href="#Home"
+            >Home</a
+          >
+          <a
+            class="h-3/4 text-white flex items-center px-4 py-2 border-2 rounded-lg hover:bg-slate-100 hover:text-black"
+            id="pSections"
+            href="#technologies"
+            >Technologies</a
+          >
+          <a
+            class="h-3/4 text-white flex items-center px-4 py-2 border-2 rounded-lg hover:bg-slate-100 hover:text-black"
+            id="pSections"
+            href="#About"
+            >About</a
+          >
+          <a
+            class="h-3/4 text-white flex items-center px-4 py-2 border-2 rounded-lg hover:bg-slate-100 hover:text-black"
+            id="pSections"
+            href="#card_cont"
+            >Contact</a
+          >
+        </ul>
+      </div>
+    </nav>
 
-                
-                    <img data-aos = "fade-up" data-aos-delay = "250" data-aos-duration="800" class=" m-3 h-60 rounded-full drop-shadow-2xl border-[#BFBFBF] border-2 "  src="./portfolio/images/pplinkedin.png" alt="profile-picture" >
-                    <p data-aos = "fade-down" data-aos-delay = "1250" data-aos-duration = "900" class=" m-3 py-1 px-1 w-50 rounded-lg bg-[#BFBFBF] shadow-xl h-50 border-2"><strong>Kieran Sweetman</strong></p>
-                    <div class="flex flex-row">
-                        <p  data-aos = 'fade-down' data-aos-delay = "1950" data-aos-duration="1000" class="py-1 px-1 m-3 text-center w-80 rounded-lg border-2 bg-[#BFBFBF]">
-                            Hi! <em><strong>This</strong></em> is my site where I keep all my future projects/ideas/thoughts.  
-                        </p>
-                        <!-- <p class="py-1 px-1 m-3 text-center w-80 rounded-lg border-2 bg-[#BFBFBF]" data-aos = 'fade-down' data-aos-delay = "1950" data-aos-duration="1000" >
+    <div class="scroll-smooth h-screen" id="Home">
+      <!-- sectino 1 -->
+      <div
+        id="content"
+        name="1"
+        class="scroll-smooth flex h-screen flex-col justify-center items-center bg-gradient-to-b from-[#343731] to-[#5F5D6C]"
+      >
+        <img
+          data-aos="fade-up"
+          data-aos-delay="250"
+          data-aos-duration="800"
+          class="overflow-hidden m-3 h-60 rounded-full drop-shadow-2xl border-[#BFBFBF] border-2"
+          src="./portfolio/images/pplinkedin.png"
+          alt="profile-picture"
+        />
+        <p
+          data-aos="fade-down"
+          data-aos-delay="1250"
+          data-aos-duration="900"
+          class="m-3 py-1 px-1 w-50 rounded-lg bg-[#BFBFBF] shadow-xl h-50 border-2"
+        >
+          <strong>Kieran Sweetman</strong>
+        </p>
+        <div class="flex flex-row">
+          <p
+            data-aos="fade-down"
+            data-aos-delay="1950"
+            data-aos-duration="1000"
+            class="py-1 px-1 m-3 text-center w-80 rounded-lg border-2 bg-[#BFBFBF]"
+          >
+            Hi! <em><strong>This</strong></em> is my site where I keep all my
+            future projects/ideas/thoughts.
+          </p>
+          <!-- <p class="py-1 px-1 m-3 text-center w-80 rounded-lg border-2 bg-[#BFBFBF]" data-aos = 'fade-down' data-aos-delay = "1950" data-aos-duration="1000" >
                             click on the arrow button to scroll to the next slide (or scroll normally to the bottom)
                         </p> -->
+        </div>
+      </div>
 
-                    </div>
-                    
-                    <input class="absolute bottom-0 mb-5 border-2 rounded-full animate-bounce" type="image" src="./portfolio/images/svg/arrow-down.svg" id="tab" name="1">
-                </div>
-            
-            <!-- section 2 -->
-                <div id="content" name='2' class="scroll-smooth h-screen  bg-gradient-to-b from-[#5F5D6C] to-[#6E6A8B] snap-center" >
-                    <div class="relative flex flex-col h-full w-full justify-center items-center gap-10" id="technologies">
-
-                        <div class=" relative  h-2/6 w-2/6 flex flex-row items-center justify-center">
+      <!-- section 2 -->
+      <div
+        id="content"
+        name="2"
+        class="scroll-smooth h-screen bg-gradient-to-b from-[#5F5D6C] to-[#6E6A8B]"
+      >
+        <div
+          class="flex flex-col h-full w-full justify-center items-center gap-10"
+          id="technologies"
+        >
+          <!-- <div class=" relative  h-2/6 w-2/6 flex flex-row items-center justify-center">
                             <div class="flex flex-col px-5 h-1/2 w-1/2 gap-10 justify-center items-center text-center rounded-xl ">
                                 <img class = " top-0 left-10 absolute h-28  overflow-visible" src="./portfolio/images/svg/dq.svg" alt="doubleQuotes" srcset="">
                                 <em><p id="quote" class="border-2 rounded-lg px-5 py-5"></p></em>
                                 <p id="author" class=" relative left-20 "></p>
                             </div>
-                        </div>
-                        
-                        
-                        <div id = 'stack' class= "h-1/3 w-1/3 flex justify-center">
-                            
-                            <div id="frontend" class = " relative flex flex-row flex-wrap-reverse w-50 justify-center items-center">
-                                <p class="absolute top-12 "> <em>Technologies used:</em></p>
-                                <img data-aos ='flip-right' data-aos-delay='' data-aos-duration = "1250" class = " h-24 w-24" src="./portfolio/images/logos/HTML5.svg" alt="html 5 logo " >
-                                <img data-aos ='flip-right' data-aos-delay='250' data-aos-duration = "1250" class = "  h-24 w-24 "src="./portfolio/images/logos/css3.svg" alt="css logo" >
-                                <img data-aos ='flip-right' data-aos-delay='500' data-aos-duration = "1250"  class= " h-24 w-24" src="./portfolio/images/logos/javascript.svg" alt="js logo" >
-                                <img data-aos ='flip-right' data-aos-delay='750' data-aos-duration = "1250" class =" h-24 w-56" src="./portfolio/images/logos/tailwindcss-logotype.svg" alt="tailwindcss logo" >
-                            </div>
-                        </div>
-                        <input class="absolute mb-5 bottom-0 border-2 rounded-full animate-bounce" type="image" src="./portfolio/images/svg/arrow-down.svg" id="tab" name="2">
-                    </div>
-                    
-                </div>
-             
-            <!-- section 3 -->
-                <div id="content" name='3' class="relative scroll-smooth flex f h-screen  flex-col justify-center items-center bg-grey gap-10 snap-center bg-gradient-to-b from-[#6E6A8B] to-[#B37F93]" >
-                    <div id="About" class="absolute top-0"></div>
-                    <div class=" h-fit relative flex flex-row w-screen justify-center gap-48">
-                        
-                        <div class = ' rounded-2xl flex flex-col h-96 w-80    items-center justify-start ' id="infoCards" name="1" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000" data-aos-easing="">
-                            <div id="inner" class="shadow-lg ">
-                                <div class="flex flex-col items-center justify-center" id="front" >
-                                    <img  class = "h-fit rounded-lg" src="./portfolio/images/svg/school.svg" alt="">
-                                    <p class = "text-center mt-2">
-                                    A diverse education thanks to my American roots and my residency in southern France.
-                                    </p>
-                                </div>
-                                <div id="back" class="flex h-full w-full justify-center shadow-lg">
-                                    <div class= 'flex flex-col justify-center items-center gap-7'>
-                                        <button class="h-1/4 w-3/4  rounded-lg ">
-                                            highschool diploma
-                                        </button>
-                                        <button class="h-1/4 w-3/4  rounded-lg ">
-                                            Social Science (minor in Economics) Bachelors from Paul valery
-                                        </button>
-                                        <button class="h-1/4 w-3/4  rounded-lg ">
-                                            Preparing for a state-recognized diploma in web developpement at Diginamic
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            
-                        </div>
+                        </div> -->
 
+          <div id="stack" class="">
+            <p class="block text-center mb-4">
+              <em>Technologies used:</em>
+            </p>
+            <div id="frontend" class="relative flex">
+              <div class="flex flex-row flex-wrap justify-center">
+                <img
+                  data-aos="flip-right"
+                  data-aos-delay=""
+                  data-aos-duration="1250"
+                  class="h-24 w-24"
+                  src="./portfolio/images/logos/HTML5.svg"
+                  alt="html 5 logo "
+                />
+                <img
+                  data-aos="flip-right"
+                  data-aos-delay="250"
+                  data-aos-duration="1250"
+                  class="h-24 w-24"
+                  src="./portfolio/images/logos/css3.svg"
+                  alt="css logo"
+                />
+                <img
+                  data-aos="flip-right"
+                  data-aos-delay="500"
+                  data-aos-duration="1250"
+                  class="h-24 w-24"
+                  src="./portfolio/images/logos/javascript.svg"
+                  alt="js logo"
+                />
+                <img
+                  data-aos="flip-right"
+                  data-aos-delay="750"
+                  data-aos-duration="1250"
+                  class="h-24 w-56"
+                  src="./portfolio/images/logos/tailwindcss-logotype.svg"
+                  alt="tailwindcss logo"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-                        <div class = ' static rounded-2xl flex flex-col  h-96 w-80  items-center justify-start' id="infoCards" name="2" data-aos="fade-up" data-aos-delay="1200" data-aos-duration="1000" data-aos-easing="">
-                            <div id="inner" class="shadow-lg ">
-                                <div class="flex flex-col items-center justify-center" id="front"> 
-                                    <img  class = "h-fit rounded-lg" src="./portfolio/images/svg/briefcase.svg" alt="">
-                                    <p class= "text-center mt-2">A responsable, communicative team player who likes to enable others while also maximazing my own potential</p>
-                                </div>
-                                <div id="back" class="flex h-full w-full justify-center shadow-lg">
-                                    <div class = "flex flex-col h-full w-full justify-center items-center gap-10" >
-                                        <button class=" rounded-lg h-1/4 w-3/4">Administrative aide/ Gate-keeper</button>
-                                        <button class=" rounded-lg h-1/4 w-3/4">Event/Tournement Organizer</button>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <div class = 'rounded-2xl flex flex-col h-96 w-80  items-center justify-start' id="infoCards" name="3" data-aos="fade-up" data-aos-delay="1800" data-aos-duration="1000" data-aos-easing="">
-                            <div id="inner" class="shadow-lg">
-                                <div class="flex flex-col items-center justify-center" id="front" >
-                                    <img  class = "h-fit w-fit rounded-lg" src="./portfolio/images/svg/notebook.svg" alt="">
-                                    <p class= "text-center mt-2">
-                                        My journy has brought me here, so what have I learned? And more importantly, how do I envision my future?
-                                    </p>
-                                </div>
-                                <div  id="back" class=" flex h-full w-full justify-center shadow-lg">
-                                    <div class = "flex flex-col justify-center items-center gap-10 w-full py-5 text-left ">
-                                        <details class="open text-left">
-                                            <summary>
-                                                Skills    
-                                            </summary>
-                                            <div>
-                                                <ul>
-                                                    <li>Descriptive Statstics</li>
-                                                    <li>something</li>
-                                                    <li>something else</li>
-                                                </ul>
-                                            </div>
-                                        
-                                        </details>
-                                        <!-- <button class="border-2 rounded-lg h-1/4 w-3/4">Programming</button> -->
-                                        <details class="open">
-                                            <summary>Programming</summary>
-                                            <div>
-                                                <ul>
-                                                    <li>HTML</li>
-                                                    <li>CSS</li>
-                                                    <li>JS</li>
-                                                    <li>Python</li>
-                                                </ul>
-                                            </div>
-                                        </details> 
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+      <!-- section 3 -->
+      <!-- use tailwind css snap as reference and headlessui you're almost there!!!!  -->
 
-                    <input class="absolute bottom-0 mb-5 border-2 rounded-full animate-bounce" type="image" src="./portfolio/images/svg/arrow-down.svg" id="tab" name = '3'>
-                    
-                </div>
+      <!-- /* Color Theme Swatches in Hex */
+            .Twilight-Keyboard-1-hex { color: #343731; }
+            .Twilight-Keyboard-2-hex { color: #5F5D6C; }
+            .Twilight-Keyboard-3-hex { color: #6E6A8B; }
+            .Twilight-Keyboard-4-hex { color: #B37F93; }
+            .Twilight-Keyboard-5-hex { color: #BFC9B8; }
             
-            <!-- section 4 -->
-                <div id="content" name='4' class="relative scroll-smooth h-screen  flex justify-center items-center bg-[#B37F93] ">
-                        <input class="absolute top-0 mt-5 border-2 rounded-full animate-bounce" type = 'image' src="portfolio/images/svg/arrow-up.svg" id= "tab" name = '4' >
-                        <div id="card_cont" class = "bg-white h-3/5 w-2/6 flex flex-col rounded-2xl border-[#4C5958] border-2">
-                            
+            /* Color Theme Swatches in RGBA */
+            .Twilight-Keyboard-1-rgba { color: rgba(52, 54, 49, 1); }
+            .Twilight-Keyboard-2-rgba { color: rgba(94, 93, 107, 1); }
+            .Twilight-Keyboard-3-rgba { color: rgba(110, 105, 138, 1); }
+            .Twilight-Keyboard-4-rgba { color: rgba(179, 126, 147, 1); }
+            .Twilight-Keyboard-5-rgba { color: rgba(191, 200, 184, 1); }
             
-                            <img  class="w-fit rounded-t-2xl" src="./portfolio/images/range.jpg" alt="Summer '20 Bonaduz Switzerland" id="swiss">
-                            
-                            <div id="pers_info" class="flex h-1/3  flex-row items-center justify-between ">
-                                <img id="pfp" class = "h-1/2 flex-none ml-5" src="./portfolio/images/card-img-pfp.jpg" alt="profile-picture">
-                                <div class="flex flex-row gap-32 text-center">
-                                    <p class="mr-28">Kieran Sweetman</p>
-                                    <p>Contact Me</p>
-                                </div>
-                                
-                                
-                                
-                                <input id="expand" class = "flex px-3 items-center justify-center   " type="image" src="./portfolio/images/svg/chevron-down.svg" name="down" >
-                                
-                            </div>
-                            <hr size="30" noshade>
-                            <div id="more_cont" class = "flex flex-row h-fill w-fill mt-16 items-center justify-evenly">
-                                <a class = "" href="https://www.linkedin.com/in/kieran-sweetman/"><img class ='h-8' src="./portfolio/images/logos/LI-In-Bug.png" alt=""></a>
-                                <a href="https://github.com/kieransweetman"><img class = 'h-10' src="./portfolio/images/logos/GitHub-Mark-120px-plus.png" alt=""></a>
-                                <a href="mailto:kieranandresweetman@gmail.com" class=""><img src="./portfolio/images/svg/at.svg" alt=""></a>
-                                
-                            </div>
-                            
+            /* Color Theme Swatches in HSLA */
+            .Twilight-Keyboard-1-hsla { color: hsla(89, 5, 20, 1); }
+            .Twilight-Keyboard-2-hsla { color: hsla(247, 7, 39, 1); }
+            .Twilight-Keyboard-3-hsla { color: hsla(247, 13, 48, 1); }
+            .Twilight-Keyboard-4-hsla { color: hsla(336, 25, 60, 1); }
+            .Twilight-Keyboard-5-hsla { color: hsla(95, 13, 75, 1); } -->
 
-                        </div>
+      <div
+        id="content"
+        name="3"
+        class="scroll-smooth flex h-screen flex-col justify-center items-center bg-grey gap-10 snap-center bg-gradient-to-b from-[#6E6A8B] to-[#B37F93]"
+      >
+        <div
+          id="About"
+          class="w-screen h-screen flex justify-center items-center"
+        >
+          <div class="flex flex-col w-screen h-1/2 gap-5 md:w-3/4 lg:w-1/2">
+            <div
+              class="h-16 w-full border-2 rounded-lg bg-transparent flex justify-center"
+              id="pers_tabs"
+            >
+              <button
+                class="w-1/3 h-full hover:bg-[#BFC9B8] rounded-tl-lg rounded-bl-lg focus:bg-[#BFC9B8]"
+                id="tab1"
+              >
+                Education
+              </button>
+              <button
+                class="w-1/3 h-full hover:bg-[#BFC9B8] focus:bg-[#BFC9B8]"
+                id="tab2"
+              >
+                Experience
+              </button>
+              <button
+                class="w-1/3 h-full hover:bg-[#BFC9B8] rounded-br-lg rounded-tr-lg focus:bg-[#BFC9B8]"
+                id="tab3"
+              >
+                Skills
+              </button>
+            </div>
+            <div
+              class="bg-slate-500 h-1/2 py-5 w-full border-2 rounded-lg bg-transparent flex flex-col justify-center gap-5 px-5"
+            >
+              <div
+                class="h-full w-full flex flex-col justify-center items-center"
+                id="tabContent"
+              >
+                <!-- <ul>
+                                    <li>Social Science Major : minor in Economics</li>
+                                    <li>Self-Learning Ressources</li>
+                                    <li>September : 5 Month French Govt accredited Front-end Diploma</li>
+                                </ul>
+                                <ul>
+                                    <li>Around a dozen small-medium sized progamming projects</li>
+                                    <li>Cité Colombière: Administrative aide + grounds-keeper for 2000 students</li>
+                                    <li>Tournement Organizer: Organized and produced In-person and online tournement Super Smash Bros. Melee events for the association LeFrenchMelee</li>
+                                </ul> -->
+                <div
+                  class="h-full w-full flex flex-row-reverse justify-evenly items-center"
+                >
+                  <div
+                    class="h-1/ w-1/3 flex flex-col justify-center items-center"
+                  >
+                    <div>communicative</div>
+                    <div>analytical</div>
+                    <div>team player</div>
+                  </div>
+                  <div
+                    class="flex flex-row h-full w-1/4 flex-wrap justify-evenly items-center"
+                  >
+                    <img src="./portfolio/images/svg/brand-html5.svg" alt="" />
+                    <img
+                      src="./portfolio/images/svg/brand-css3.svg"
+                      alt=""
+                    /><img
+                      src="./portfolio/images/svg/brand-javascript.svg"
+                      alt=""
+                    /><img
+                      src="./portfolio/images/svg/brand-python.svg"
+                      alt=""
+                    /><img src="" alt="" /><img src="" alt="" />
+                  </div>
+                </div>
+              </div>
 
-                        
-                        <!-- <div class="flex justify-evenly items-center h-1/4 w-1/2">
+              <!-- <div class="w-full h-1/4 border-2 rounded-full animate-pulse bg-slate-500"></div>
+                                <div class="w-full h-1/4 border-2 rounded-full animate-pulse bg-slate-500"></div>
+                                <div class="w-full h-1/4 border-2 rounded-full animate-pulse bg-slate-500"></div> -->
+            </div>
+
+            <!-- <div class="flex absolute top-[19.7rem] left-[-34%] rounded-lg h-[14.6rem] w-full" id="slider">
+                                <div class="h-full border-2 w-1/3 flex justify-center items-center rounded-lg" id="edu">center 1</div>
+                                <div class="h-full border-2 w-1/3 flex justify-center items-center rounded-lg" id="exp">center 2</div>
+                                <div class="h-full border-2 w-1/3 flex justify-center items-center rounded-lg" id="skills">center 3</div>
+                            </div> -->
+          </div>
+        </div>
+      </div>
+
+      <!-- section 4 -->
+      <div
+        id="content"
+        name="4"
+        class="scroll-smooth h-screen flex justify-center items-center bg-[#B37F93]"
+      >
+        <div
+          id="card_cont"
+          class="bg-white h-1/2 w-screen flex flex-col rounded-2xl border-[#4C5958] border-2 md:w-3/4 lg:w-1/4 lg:h-1/2"
+        >
+          <img
+            class="w-fit rounded-t-2xl"
+            src="./portfolio/images/range.jpg"
+            alt="Summer '20 Bonaduz Switzerland"
+            id="swiss"
+          />
+
+          <div
+            id="pers_info"
+            class="flex h-1/3 flex-row items-center justify-between"
+          >
+            <img
+              id="pfp"
+              class="h-1/2 flex-none"
+              src="./portfolio/images/card-img-pfp.jpg"
+              alt="profile-picture"
+            />
+            <div class="flex flex-row text-center">
+              <p class="mr-28">Kieran Sweetman</p>
+              <p>Contact Me</p>
+            </div>
+
+            <input
+              id="expand"
+              class="flex px-3 items-center justify-center"
+              type="image"
+              src="./portfolio/images/svg/chevron-down.svg"
+              name="down"
+            />
+          </div>
+          <hr size="30" noshade />
+          <div
+            id="more_cont"
+            class="flex flex-row mt-5 h-fill w-fill items-center justify-evenly px-5"
+          >
+            <a class="" href="https://www.linkedin.com/in/kieran-sweetman/"
+              ><img
+                class="h-8"
+                src="./portfolio/images/logos/LI-In-Bug.png"
+                alt=""
+            /></a>
+            <a href="https://github.com/kieransweetman"
+              ><img
+                class="h-10"
+                src="./portfolio/images/logos/GitHub-Mark-120px-plus.png"
+                alt=""
+            /></a>
+            <a href="mailto:kieranandresweetman@gmail.com" class=""
+              ><img src="./portfolio/images/svg/at.svg" alt=""
+            /></a>
+          </div>
+        </div>
+
+        <!-- <div class="flex justify-evenly items-center h-1/4 w-1/2">
                             <div>
                                 <a href="https://github.com/kieransweetman" class="hover:underline underline-offset-8 text-zinc-400">Github</a>
                             </div>
@@ -233,17 +356,15 @@ hide scroll buttons when no longer in view and slowly fade in once they are -->
                             </div>
                             
                         </div>  -->
-                </div>
-            
-        </div>
-        <script>
-            AOS.init({
-                startEvent: 'DOMContentLoaded',
-                once: false,
-                mirror: false,
-                anchorPlacement: 'top-bottom',
-            })
-            
-        </script>
-</body>
+      </div>
+    </div>
+    <script>
+      AOS.init({
+        startEvent: "DOMContentLoaded",
+        once: false,
+        mirror: false,
+        anchorPlacement: "top-bottom",
+      });
+    </script>
+  </body>
 </html>
