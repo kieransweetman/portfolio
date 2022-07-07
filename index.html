@@ -32,9 +32,11 @@ hide scroll buttons when no longer in view and slowly fade in once they are -->
   </head>
   <body class="overflow-x-hidden">
     <nav class="w-full h-12 fixed bg-transparent 0">
-      <div class="flex items-center h-full w-full md:justify-center">
+      <div
+        class="flex items-center h-full w-full md:justify-center content-center"
+      >
         <ul
-          class="h-full flex md:w-screen md:justify-center lg:justify-end lg:gap-3"
+          class="h-full w-full justify-center items-center flex gap-1 md:w-screen md:justify-center lg:justify-end lg:gap-3"
         >
           <a
             class="h-3/4 text-white flex items-center px-4 py-2 border-2 rounded-lg hover:bg-slate-100 hover:text-black"
@@ -300,7 +302,7 @@ hide scroll buttons when no longer in view and slowly fade in once they are -->
 
           <div
             id="pers_info"
-            class="flex h-1/3 flex-row items-center justify-between"
+            class="flex h-1/3 flex-row items-center justify-between px-4"
           >
             <img
               id="pfp"

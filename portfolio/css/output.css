@@ -500,10 +500,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   left: -34%;
 }
 
-.z-0 {
-  z-index: 0;
-}
-
 .m-3 {
   margin: 0.75rem;
 }
@@ -671,8 +667,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   flex-wrap: wrap;
 }
 
+.content-center {
+  align-content: center;
+}
+
 .items-center {
   align-items: center;
+}
+
+.justify-start {
+  justify-content: flex-start;
 }
 
 .justify-center {
@@ -693,6 +697,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .gap-5 {
   gap: 1.25rem;
+}
+
+.gap-1 {
+  gap: 0.25rem;
 }
 
 .overflow-hidden {
@@ -968,107 +976,29 @@ button:active {
   background-color: rgb(191 201 184 / var(--tw-bg-opacity));
 }
 
+@media (min-width: 640px) {
+  .sm\:justify-end {
+    justify-content: flex-end;
+  }
+}
+
 @media (min-width: 768px) {
-  .md\:h-1\/2 {
-    height: 50%;
-  }
-
-  .md\:h-3\/4 {
-    height: 75%;
-  }
-
-  .md\:h-2\/5 {
-    height: 40%;
-  }
-
-  .md\:h-2\/3 {
-    height: 66.666667%;
-  }
-
-  .md\:h-\[100px\] {
-    height: 100px;
-  }
-
-  .md\:h-\[200px\] {
-    height: 200px;
-  }
-
-  .md\:h-\[300px\] {
-    height: 300px;
-  }
-
-  .md\:h-\[400px\] {
-    height: 400px;
-  }
-
-  .md\:h-\[800px\] {
-    height: 800px;
-  }
-
-  .md\:h-\[500px\] {
-    height: 500px;
-  }
-
-  .md\:h-\[600px\] {
-    height: 600px;
-  }
-
-  .md\:h-\[750px\] {
-    height: 750px;
-  }
-
-  .md\:w-1\/2 {
-    width: 50%;
+  .md\:w-screen {
+    width: 100vw;
   }
 
   .md\:w-3\/4 {
     width: 75%;
   }
 
-  .md\:w-full {
-    width: 100%;
-  }
-
-  .md\:w-screen {
-    width: 100vw;
-  }
-
-  .md\:justify-start {
-    justify-content: flex-start;
-  }
-
   .md\:justify-center {
     justify-content: center;
-  }
-
-  .md\:justify-around {
-    justify-content: space-around;
-  }
-
-  .md\:justify-evenly {
-    justify-content: space-evenly;
-  }
-
-  .md\:gap-3 {
-    gap: 0.75rem;
   }
 }
 
 @media (min-width: 1024px) {
-  .lg\:h-3\/4 {
-    height: 75%;
-  }
-
-  .lg\:h-1\/4 {
-    height: 25%;
-  }
-
   .lg\:h-1\/2 {
     height: 50%;
-  }
-
-  .lg\:w-3\/4 {
-    width: 75%;
   }
 
   .lg\:w-1\/2 {

@@ -105,26 +105,73 @@ pers_tabs.addEventListener('click', (event)=> {
 
 function eduInfo(){
     const img = document.createElement('img');
-    const button1 = document.createElement('button');
+    const div = document.createElement('div');
+    const p1 = document.createElement('p');
+    const p2 = document.createElement('p');
+    const p3 = document.createElement('p');
+
     img.setAttribute('src', "./portfolio/images/svg/school.svg")
     resume_info.appendChild(img);
-    button1.textContent = "Social Science Major";
-    resume_info.appendChild(button1);
+
+    p1.textContent = "- Social Science Major"
+    p2.textContent = "- Opquast Certifified"
+    p3.textContent = "- Future student at Diginimaic (Web Dev RNCP 5, bac +3)"
+    resume_info.appendChild(div);
+
+    div.appendChild(p1);
+    div.appendChild(p2);
+    div.appendChild(p3);
+
+
 
 }
 
 function expInfo(){
+    const div = document.createElement('div');
+    const p1 = document.createElement('p');
+    const p2 = document.createElement('p');
+    const p3 = document.createElement('p');
+
     const img = document.createElement('img')
     img.setAttribute('src', "./portfolio/images/svg/briefcase.svg");
+
+    p1.textContent ='- Php blog using the MVC model';
+    p2.textContent ="- Resume site, using custom components made with javascript";
+    p3.textContent ="- implementing JS libraries (animation on scroll) and using Git to document versions";
+
     resume_info.appendChild(img);
+    resume_info.appendChild(div);
+
+    div.appendChild(p1);
+    div.appendChild(p2);
+    div.appendChild(p3);
 }
 
 function Skills(){
     const img = document.createElement('img');
+    const div = document.createElement('div');
+    const p1 = pGen('- HTML, CSS, JS');
+    const p2 = pGen('- Python');
+    const p3 = pGen('- Php');
+    const p4 = pGen('- Databases (SQL, Apache)');
+    const p5 = pGen('- Async functions, promises, and parsing API requests');
+
     img.setAttribute('src', "./portfolio/images/svg/notebook.svg");
     resume_info.appendChild(img)
+    resume_info.appendChild(div);
+
+    div.appendChild(p1);
+    div.appendChild(p2);
+    div.appendChild(p3);
+    div.appendChild(p4);
+    div.appendChild(p5);
 }
 
+function pGen(string){
+    const p = document.createElement('p');
+    p.textContent = string;
+    return p;
+}
 // quote generator
 
 async function getQuote() {
