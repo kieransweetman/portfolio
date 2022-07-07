@@ -32,8 +32,10 @@ hide scroll buttons when no longer in view and slowly fade in once they are -->
   </head>
   <body class="overflow-x-hidden">
     <nav class="w-full h-12 fixed bg-transparent 0">
-      <div class="flex items-center h-full w-full">
-        <ul class="h-full flex">
+      <div class="flex items-center h-full w-full md:justify-center">
+        <ul
+          class="h-full flex md:w-screen md:justify-center lg:justify-end lg:gap-3"
+        >
           <a
             class="h-3/4 text-white flex items-center px-4 py-2 border-2 rounded-lg hover:bg-slate-100 hover:text-black"
             id="pSections"
@@ -190,13 +192,13 @@ hide scroll buttons when no longer in view and slowly fade in once they are -->
       <div
         id="content"
         name="3"
-        class="scroll-smooth flex f h-screen flex-col justify-center items-center bg-grey gap-10 snap-center bg-gradient-to-b from-[#6E6A8B] to-[#B37F93]"
+        class="scroll-smooth flex h-screen flex-col justify-center items-center bg-grey gap-10 snap-center bg-gradient-to-b from-[#6E6A8B] to-[#B37F93]"
       >
         <div
           id="About"
           class="w-screen h-screen flex justify-center items-center"
         >
-          <div class="flex flex-col w-screen h-1/2 gap-5">
+          <div class="flex flex-col w-screen h-1/2 gap-5 md:w-3/4 lg:w-1/2">
             <div
               class="h-16 w-full border-2 rounded-lg bg-transparent flex justify-center"
               id="pers_tabs"
@@ -287,7 +289,7 @@ hide scroll buttons when no longer in view and slowly fade in once they are -->
       >
         <div
           id="card_cont"
-          class="bg-white h-1/2 w-screen flex flex-col rounded-2xl border-[#4C5958] border-2"
+          class="bg-white h-1/2 w-screen flex flex-col rounded-2xl border-[#4C5958] border-2 md:w-3/4 lg:w-1/4 lg:h-1/2"
         >
           <img
             class="w-fit rounded-t-2xl"

@@ -25,7 +25,7 @@ expand.addEventListener('click', () => {
  function expandDown() {
     
     card_cont.style.transition = "height .2s ease-in-out";
-    card_cont.style.height ="30rem";
+    card_cont.style.height ="57%";
     
     more_cont.style.transition = "opacity .3s ease-in-out .2s"
     more_cont.style.opacity = "1";
